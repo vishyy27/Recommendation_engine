@@ -2,24 +2,24 @@
 
 ## Overview
 
-This project implements a user recommendation system that suggests similar users based on shared interests. The system is inspired by real-world applications such as social platforms where users are matched based on preferences and behavior.
+This project implements a user recommendation system that suggests similar users based on shared interests. The system demonstrates how similarity-based algorithms can be used to build personalized recommendations.
 
 ---
 
 ## Problem Statement
 
-The objective is to recommend users who have similar interests to a given user. This helps in building connections, improving engagement, and enhancing user experience on platforms like MeetMux.
+The objective is to recommend users who have similar interests to a given user. Such systems are widely used in platforms to improve user engagement and personalization.
 
 ---
 
 ## Approach
 
-The system follows a user-based collaborative filtering approach:
+The system uses a user-based collaborative filtering approach:
 
 1. Represent each user as a feature vector of interests.
 2. Compute similarity between users using cosine similarity.
 3. Rank users based on similarity scores.
-4. Apply additional constraints and enhancements to improve recommendations.
+4. Apply additional constraints to refine recommendations.
 
 ---
 
@@ -29,13 +29,13 @@ The system follows a user-based collaborative filtering approach:
   Measures similarity between users based on their interest vectors.
 
 * **Feature Weighting**
-  Assigns higher importance to certain features (e.g., sports, tech, fitness) to reflect real-world preferences.
+  Assigns higher importance to selected features (e.g., sports, tech, fitness).
 
 * **Location-Based Filtering**
-  Recommends users from the same location to simulate practical constraints.
+  Recommends users from the same location.
 
 * **Hybrid Scoring**
-  Combines similarity score with the number of common interests to improve recommendation quality.
+  Combines similarity score with the number of common interests.
 
 * **Edge Case Handling**
   Handles invalid user inputs gracefully.
@@ -75,7 +75,7 @@ Recommendation_engine/
 1. Load user data from a CSV file.
 2. Preprocess the data by removing non-numeric columns.
 3. Apply feature weighting.
-4. Compute cosine similarity between all users.
+4. Compute cosine similarity between users.
 5. For a given user:
 
    * Filter users based on location.
@@ -105,14 +105,14 @@ Output:
 * Integration with real-world datasets
 * Conversion into a REST API using FastAPI
 * Deployment as a web service
-* Incorporation of user behavior data (clicks, interactions)
-* Use of advanced models such as embeddings or neural networks
+* Incorporation of behavioral data (user activity, interactions)
+* Use of advanced techniques such as embeddings
 
 ---
 
 ## Key Learnings
 
-* Understanding similarity metrics in machine learning
-* Building recommendation systems from scratch
-* Feature engineering and weighting
-* Structuring a machine learning project for production readiness
+* Understanding similarity-based recommendation systems
+* Implementing cosine similarity from scratch
+* Feature engineering and weighting techniques
+* Structuring machine learning projects for scalability
